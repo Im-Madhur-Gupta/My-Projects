@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            background-color: antiquewhite;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+        .navbar ul{
+            overflow:auto;
+            /* Parent of li */
+        }
+        /* decendant selector */
+        .navbar li{
+            /* to remove bullets */
+            list-style: none;
+            float: left;
+            /* IMP - float karne se element apne doc flow se bahar aa jata he / overflow ho jata he, to contain this iske parent me overflow : auto; karna padega */
+            font-family: 'Aclonica';
+            margin: 5px;
+            font-size: larger;
+            text-decoration:underline;
+            border-right: 2px solid black;
+            padding-right: 7px;
+            color: black;
+        }
+        .navbar a:hover{
+            color: rgb(204, 37, 37);
+        }
+        .search{
+            float: right;
+            padding-top: 1px;
+            margin-right: 25px;
+        }
+        #search, #btn{
+            border: 2px solid black;
+            padding: 5px;
+            background-color:rgb(173, 137, 137);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://www.google.com" target="_blank">About</a></li>
+                <li><a href="https://www.google.com" target="_blank">Services</a></li>
+                <li><a href="https://www.google.com" target="_blank">Download</a></li>
+                <li><a href="https://www.google.com" target="_blank">Contact Us</a></li>
+
+                <div class="search">
+                    <input type="text" id="search" name="search_query">
+                    <button id="btn">Search</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
