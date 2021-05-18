@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto Condensed',Tahoma,sans-serif;
+}
+html{
+    background: url('img/gym4.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/** Nav bar styling **/
+header{
+    margin: 15px 15px 121px 15px;
+}
+.left, .center, .right{
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* left */
+.gymname{
+    display: inline;
+    padding-left: 10px;
+    position: relative;
+    bottom: 17px;
+    
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+/* center */
+.center{
+    float: right;
+    position: relative;
+    top: 20px;
+    padding-right: 50px;
+}
+.anchor{
+    float: left;
+    padding: 0 10px 17px 10px;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+/* right */
+.right{
+    float: right;
+}
+.btn{
+    background-color: #f44336;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    position: relative;
+    top: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #ca382e;
+}
+
+/* Quote styling */
+#quote{
+    clear: right;
+    float: right;
+    font-family:'Anton';
+    width: 40%;
+    font-size: 60px;
+    font-weight: 300;
+    margin: 20px 22px 0 0;
+}
+.hightxt{
+    color: red;
+    font-size: larger;
+    font-weight: 600;
+    display: block;
+    width: 11%;
+    float: right;
+    margin: 0px 377px -19px 0;
+}
+
+/* form styling */
+.form-cont{
+    clear: right;
+    float: right;
+    margin: 150px 0 70px 0;
+    background-color: #f0eeee;
+    padding-top: 5px;
+}
+.form-txtcont{
+    float: right;
+    margin: 40px 90px 0 0 ;
+}
+form{
+    padding-left: 100px;
+}
+.form-group{
+    padding-bottom: 5px;
+}
+.form-group input,.form-group select{
+    width: 50%;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+.form-group select,.form-group option{
+    text-indent: 40%;
+    color: black;
+}
+.form-group textarea{
+    color: black;
+    text-align: center;
+    padding: 5px;
+    margin-left: -45px;
+}
+.form-txtcont h2{
+    font-size: 35px;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 20px;
+}
+.formpic{
+    width: 52%;
+    height: 50%;
+}
+#bottombtn{
+    margin-left: 45px;
+}
+
+/* footer */
+footer{
+    width: 50%;
+    margin: 20px auto;
+    clear: right;
+    padding: 8px;
+    background-color: #f0eeee;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+footer p{
+    text-align: center;
+    color: black;
+}
