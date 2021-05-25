@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* navigation bar styling */
+#navbar{
+    display: flex;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    z-index: -1;
+    position: absolute;
+    height: 100%; /* puri navbar ka color ye hoto w 100% and h bhi 100% and its position relative*/
+    width: 100%;
+    opacity: 0.5;
+}
+
+/* navigation bar : logo and heading */
+#navlogo{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+#navlogo img{
+    width: 4rem;
+    height: 4rem;
+    margin: 0px 10px;
+}
+#navlogo h2{
+    color: white;
+}
+
+/* navigation bar : list */
+#navlist{
+    display: flex;
+    align-items: center;
+}
+#navlist li{
+    list-style: none;
+    font-size: 1.06rem;
+}
+#navlist li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navlist li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Home Section styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 40px;
+}
+#home::before{
+    content: "";
+    background: url("img/foodimg5.jpeg") no-repeat center center fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+}
+#home h1{
+    color: white;
+}
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    width: 430px;
+    text-align: justify;
+}
+#home .btn{
+    margin-top: 20px;
+}
+
+/* services section */
+#services
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+}
+.h-secondary{
+    font-size: 1.8rem;
+}
+.btn{
+    padding: 6px 10px;
+    background-color: rgb(132,109,92);
+    color: white;
+    border: 2px solid white;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
