@@ -17,7 +17,7 @@
     position: absolute;
     height: 100%; /* puri navbar ka color ye hoto w 100% and h bhi 100% and its position relative*/
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 /* navigation bar : logo and heading */
@@ -30,9 +30,6 @@
     width: 4rem;
     height: 4rem;
     margin: 0px 10px;
-}
-#navlogo h2{
-    color: white;
 }
 
 /* navigation bar : list */
@@ -50,6 +47,8 @@
     border-radius: 20px;
     text-decoration: none;
     color: white;
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 #navlist li a:hover{
     background-color: white;
@@ -67,7 +66,7 @@
 }
 #home::before{
     content: "";
-    background: url("img/foodimg5.jpeg") no-repeat center center fixed;
+    background: url("img/foodimg5.jpeg") no-repeat center center/cover;
     z-index: -1;
     top: 0;
     left: 0;
@@ -76,9 +75,6 @@
     width: 100%;
     opacity: 0.75;
 }
-#home h1{
-    color: white;
-}
 #home p{
     color: white;
     font-size: 1.2rem;
@@ -86,18 +82,20 @@
     text-align: justify;
 }
 #home .btn{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 /* services section */
-#services
+
 
 /* Utility Classes */
-.h-primary{
+h1{
     font-size: 2.8rem;
+    color: white;
 }
-.h-secondary{
+h2{
     font-size: 1.8rem;
+    color: white;
 }
 .btn{
     padding: 6px 10px;
