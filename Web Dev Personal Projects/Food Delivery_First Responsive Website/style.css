@@ -15,6 +15,8 @@
     background-color: black;
     z-index: -1;
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%; /* puri navbar ka color ye hoto w 100% and h bhi 100% and its position relative*/
     width: 100%;
     opacity: 0.7;
@@ -30,6 +32,9 @@
     width: 4rem;
     height: 4rem;
     margin: 0px 10px;
+}
+#navbar h1{
+    color: white;
 }
 
 /* navigation bar : list */
@@ -59,19 +64,19 @@
 #home{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    /* height: 633px; */
     align-items: flex-start;
     justify-content: center;
-    padding: 10px 40px;
+    padding: 25px 40px;
 }
 #home::before{
     content: "";
     background: url("img/foodimg5.jpeg") no-repeat center center/cover;
     z-index: -1;
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
-    height: 100%;
+    height: 60%;
     width: 100%;
     opacity: 0.75;
 }
@@ -81,28 +86,88 @@
     width: 430px;
     text-align: justify;
 }
+#home h1{
+    color: white;
+}
 #home .btn{
     margin-top: 25px;
 }
 
 /* services section */
+#services-container{
+    margin: 14px 0px -20px 0px;
+    padding: 11px 40px 30px 40px;
+    background-color:  rgb(112, 93, 78);
+    border-top: 5px solid white;
+}
+#services-container h2, #services h3{
+    text-align: center;
+    color: white;
+}
+#services{
+    display: flex;
+}
+#services .box{
+    border: 2px solid white;
+    border-radius: 23px;
+    margin: 12px;
+    padding: 15px;
+}
+#services .box img{
+    display: block;
+    height: 300px;
+    margin: auto;
+}
+#services .box p{
+    text-align: justify;
+    color: white;
+}
 
+/* investor section */
+#inves-container{
+    background-color: rgb(236, 225, 225);
+}
+#inves-container h2{
+    text-align: center;
+    margin: 20px;
+    padding-top: 10px;
+    color: rgb(75, 62, 53);
+}
+#inves{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#inves .box img{
+    display: block;
+    height: 150px;
+    margin: auto;
+}
+#inves .box h3{
+    margin: 20px;
+    color: rgb(75, 62, 53);
+}
 
 /* Utility Classes */
 h1{
     font-size: 2.8rem;
-    color: white;
+    font-weight: 900;
 }
 h2{
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+h3{
     font-size: 1.8rem;
-    color: white;
+    font-weight: 900;
 }
 .btn{
     padding: 6px 10px;
     background-color: rgb(132,109,92);
     color: white;
     border: 2px solid white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     border-radius: 10px;
     cursor: pointer;
 }
