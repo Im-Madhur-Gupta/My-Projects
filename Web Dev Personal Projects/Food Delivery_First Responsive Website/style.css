@@ -78,7 +78,7 @@
     left: 0;
     height: 60%;
     width: 100%;
-    opacity: 0.75;
+    opacity: 0.65;
 }
 #home p{
     color: white;
@@ -112,11 +112,18 @@
     border-radius: 23px;
     margin: 12px;
     padding: 15px;
+    transition: all 0.4s ease-out;
+    cursor: default;
 }
+#services .box:hover{
+    background-color: rgb(100, 71, 71);
+}
+/* (98, 82, 74) */
 #services .box img{
     display: block;
     height: 300px;
     margin: auto;
+    border: 2px solid white;
 }
 #services .box p{
     text-align: justify;
@@ -148,26 +155,78 @@
     color: rgb(75, 62, 53);
 }
 
+/* contact section */
+#contact-container{
+    height: 60vh;
+    width: 60vw;
+    position: relative;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.8rem 0;
+}
+#contact-container::before{
+    content: "";
+    background: url("img/formback.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 60vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact-container h2{
+    text-align: center;
+}
+#contact-box input, #contact-box textarea{
+    width: 25vw;
+    padding: 0.2rem;
+    margin: 0.3rem;
+    font-size: 1rem;
+}
+
+/* footer */
+footer{
+    background-color: whitesmoke;
+    font-size: 18px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+    padding: 8px 15px;
+    width: fit-content;
+    margin: 15px auto;
+}
+
 /* Utility Classes */
 h1{
     font-size: 2.8rem;
     font-weight: 900;
 }
 h2{
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: 900;
 }
 h3{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 900;
 }
 .btn{
-    padding: 6px 10px;
     background-color: rgb(132,109,92);
     color: white;
-    border: 2px solid white;
-    font-size: 1.5rem;
-    font-weight: 700;
+    border: 3px solid white;
     border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 5px;
     cursor: pointer;
+    transition: all 0.6s ease-out;
+}
+.btn:hover{
+    color: rgb(132,109,92);
+    background-color: white;
+    border: 3px solid rgb(132,109,92);
 }
