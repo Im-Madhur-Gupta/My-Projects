@@ -44,16 +44,16 @@
 }
 #navlist li{
     list-style: none;
-    font-size: 1.06rem;
 }
 #navlist li a{
     display: block;
-    padding: 3px 22px;
+    padding: 3px 10px;
+    margin: 0 6px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 #navlist li a:hover{
     background-color: white;
@@ -76,14 +76,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 60%;
+    height: 66%;
     width: 100%;
-    opacity: 0.65;
+    opacity: 0.75;
 }
 #home p{
     color: white;
-    font-size: 1.2rem;
-    width: 430px;
+    font-size: 1.1rem;
+    width: 25vw;
     text-align: justify;
 }
 #home h1{
@@ -145,14 +145,18 @@
     justify-content:space-evenly;
     align-items: center;
 }
+#inves .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 #inves .box img{
-    display: block;
-    height: 150px;
-    margin: auto;
+    height: 9rem;
 }
 #inves .box h3{
-    margin: 20px;
     color: rgb(75, 62, 53);
+    margin: 1.25rem;
 }
 
 /* contact section */
@@ -197,7 +201,7 @@ footer{
     border-radius: 12px;
     text-align: center;
     padding: 8px 15px;
-    width: fit-content;
+    width: 70%;
     margin: 15px auto;
 }
 

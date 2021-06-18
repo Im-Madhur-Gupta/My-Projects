@@ -5,7 +5,15 @@
 }
 
 /* home */
-
+#home{
+    align-items: center;
+}
+#home::before{
+    opacity: 0.65;
+}
+#home p{
+    width: 80%;
+}
 
 /* services */
 #services{
@@ -13,6 +21,27 @@
 }
 
 /* investors */
-
+#inves{
+    flex-direction: column;
+}
+#inves .box img{
+    height: 7rem;
+}
 
 /* contact us */
+
+/* footer */
+footer{
+    width: 85%;
+}
+
+/* utility */
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
