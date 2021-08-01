@@ -1,0 +1,4 @@
+Ab mai Pug me inheritance kar waunga taki mujhe apni .pug me ek basic template mil jae, like usme same nav bar ho, head me same title aae and footer same aee.
+using extends keyword
+Mujhe navbar, footer sare pages me chahiye tha to maine undono ka code aise ka aisa base.pug me respective positions pe dal diya, to ab mujhe is base.pug  se banae hue extended pages pe navbar aur footer ka code ni dalna padega.
+https://pugjs.org/language/inheritance.html

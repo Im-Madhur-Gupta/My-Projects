@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Style Script', cursive;
+}
+#contactcont::before{
+    content: "";
+    width: 1519.2px;
+    height: 110vh;
+    z-index: -1;
+    top: 0px;
+    position: fixed;
+    background: url("/static/imgs/bg2.jpg") no-repeat center center/cover;
+}
+#contactcont{
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#formcont{
+    background-color: whitesmoke;
+    opacity: 0.8;
+    width: 30vw;
+    height: 75vh;
+    margin-top: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 63vh;
+}
+input,textarea{
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    outline: none;
+    border: 2px solid rgb(151,9,8);
+    border-radius: 4px;
+    background-color: whitesmoke;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(151,9,8);
+    text-align: center;
+}
+input::placeholder,textarea::placeholder{
+    color: rgb(151,9,8);
+    font-weight: 600;
+}
+.btn{
+    background-color: white;
+    padding: 5px 50px;
+    margin: 4px;
+    border: 2px solid rgb(151,9,8);
+    border-radius: 5px;
+    color: rgb(151,9,8);
+    font-size: 22px;
+    font-weight: 800;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(151,9,8);
+    color: white;
+    border-color: white;
+}
+h3{
+    /* padding-top: 20px; */
+    font-weight: 900;
+    color: rgb(151,9,8);
+    font-size: 40px;
+}

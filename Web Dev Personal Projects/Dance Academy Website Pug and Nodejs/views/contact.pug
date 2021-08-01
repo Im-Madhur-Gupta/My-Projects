@@ -1,0 +1,21 @@
+extends base.pug
+block scripts
+    script(src="../static/script.js")
+block style
+    style
+        include ../static/style.css
+        include ../static/styleContact.css
+block content
+    <div id="contactcont">
+        <div id="formcont">
+            <h3>Contact Us</h3>
+            <form action="/contact" method="POST">
+                <input type="text" name="name" id="name" placeholder="Enter your Name">
+                <input type="text" name="age" id="age" placeholder="Enter your Age">
+                <input type="text" name="phone" id="phone" placeholder="Enter your Phone No.">
+                <textarea name="addrs" id="addrs" cols="60" rows="5" placeholder="Enter your Address"></textarea>
+                <textarea name="about" id="about" cols="60" rows="5" placeholder="Something About You"></textarea>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>

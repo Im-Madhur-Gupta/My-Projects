@@ -1,0 +1,28 @@
+extends base.pug
+
+//- Basically ab mai block ____ me kya dalna he wo batunga
+
+block scripts
+    script(src="../static/script.js")
+block style
+    style
+        include ../static/style.css
+block content
+    section#introsec
+        h1 Welcome To Move
+        <div>
+            h2 “Dance is the hidden language of the soul.”
+            h2 - Martha Graham
+        </div>
+    section#infosec
+        <h3>Why Us?</h3>
+        <div id="infocont">
+            <div class="info">
+                <h4>Dance as your career? Why not!</h4>
+                <p>Dance Academy can be a great medium to express yourself and enjoy your life. But, there is much more to this craft.</p>
+            </div>
+            <div class="info">
+                <h4>Challenges</h4>
+                <p>There is hardly any challenge that a dedicated dancer can’t face in his/her entire career except for their ego. </p>
+            </div>
+        </div>  
