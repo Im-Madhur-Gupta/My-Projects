@@ -4,7 +4,7 @@
   "description": "This is a package of my dance academy website project created using pug and nodejs. ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Madhur Gupta",
   "license": "ISC",
