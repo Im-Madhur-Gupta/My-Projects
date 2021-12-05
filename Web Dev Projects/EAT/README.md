@@ -1,1 +1,2 @@
-URL for this deployed website - https://im-madhur-gupta.github.io/My-Projects/Web%20Dev%20Personal%20Projects/Food%20Delivery_First%20Responsive%20Website/
+A static, responsive website for a hypothetical EAT online food ordering service deployed on Github Pages.
+Link for this website - https://im-madhur-gupta.github.io/My-Projects/Web%20Dev%20Projects/EAT/
